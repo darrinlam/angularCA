@@ -34,6 +34,7 @@ function todoDirective () {
         '<h2>{{todo.type}}</h2>' +
         '<h5>{{todo.task}}</h5>' + 
         '<h6>{{todo.notes}}</h6>' +
+        '<button>Done</button>' +
       '</div>'
     ), 
    // link: link
