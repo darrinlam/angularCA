@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script src="todo.js"></script>
+    <meta charset="utf-8">
+    <title>To-Do List</title>
+
+</head>
+
+<body>
+    <!--
+    1. ng-app='app' tells angular that everything within this div should function within
+    the scope of a declared angular module with the name of app.
+    2. ng-controller='mainCtrl' tells angular that the scope of this div should be handled
+    by a controller by the name of 'mainCtrl'. In a bigger application you will likely have
+    multiple controllers within one ng-app
+  -->
+    <div id=control ng-app='app' ng-controller='mainCtrl'>
+        <h1>My To-Do List</h1>
+
+        <form name='todo' ng-submit='addNew(todo)'>
+
+            <input placeholder='Type' ng-model='todo.type' /><br>
+            <input placeholder='Task' ng-model='todo.task' /><br>
+            <input placeholder='Notes' ng-model='todo.notes' /><br>
+
+            <button type='submit'>Add New</button>
+        </form>
+
+        <ol class='todolist'>
+            <li ng-repeat='todo in todos'>
+                <tododir todo='todo'/>
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>
