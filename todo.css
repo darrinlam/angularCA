@@ -1,9 +1,47 @@
 li {
     list-style: none;
     height: 150px;
-    width: 150px;
-    border-width:10px;
-    border-radius:3px;
-    border-color:black;
-    background:rgba(0,0,0,.75);
+    width: 300px;
+    border: 3px solid black;
+    border-radius:5px;
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    word-wrap: break-word;
+    overflow:scroll;
+    
+}
+.fa-close {
+  cursor: pointer;
+  position:relative;
+  
+}
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+h1 {
+    text-align:center;
+}
+form {
+    text-align:center;
+}
+#control {
+    background:white;
+    width:750px;
+    margin:auto;
+    padding:0;
+    top:0;
+    left:25%;
+    right:25%;
+    position:fixed;
+}
+body {
+    background:black;
+}
+html {
+    margin:0;
+    padding:0;
 }
