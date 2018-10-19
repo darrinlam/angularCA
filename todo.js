@@ -15,20 +15,24 @@ function mainCtrl ($scope) {
     $scope.todos.push({ 
       type: todo.type,
       task: todo.task,
-      notes: todo.notes
+      notes: todo.notes,
+      importance: todo.importance
     }); 
     
     todo.type = ''; 
     todo.task = '';
     todo.notes ='';
+    todo.importance ='';
   };
   
-  $scope.deleteTask = function(){
-    alert('worked');
-  };
+  $scope.deleteTask = function(index){
+    $scope.todos.splice(index, 1);
+      
+    };
+    
 }
 
-function todoDirective () {
+/* function todoDirective () {
   return {
     scope: {
       todo: '=' 
@@ -45,3 +49,4 @@ function todoDirective () {
 
   };
 }
+*/

@@ -1,0 +1,9 @@
+li {
+    list-style: none;
+    height: 150px;
+    width: 150px;
+    border-width:10px;
+    border-radius:3px;
+    border-color:black;
+    background:rgba(0,0,0,.75);
+}
