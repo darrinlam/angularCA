@@ -82,3 +82,6 @@ input:hover{
     width: 150px;
     border-bottom-color: #F97D75;
 }
+input:hover::placeholder {
+    color: #F97D75;
+}
