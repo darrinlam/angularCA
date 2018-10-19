@@ -26,19 +26,24 @@
             <input placeholder='Type' ng-model='todo.type' /><br>
             <input placeholder='Task' ng-model='todo.task' /><br>
             <input placeholder='Notes' ng-model='todo.notes' /><br>
-            <input placeholder='Importance (1-10)' ng-model='todo.importance' /></br>
+            <input placeholder='Importance (1-5)' ng-model='todo.importance' /></br>
 
             <button type='submit'>Add New</button>
         </form>
         
         <ol class='todolist'>
-            <li ng-repeat="todo in todos | orderBy: 'importance'">
+            <li class="items" ng-repeat="todo in todos | orderBy: '-importance'"> 
                 <span class ="fa fa-close" ng-click=deleteTask()></span>
                 </br>
                 <span>
-                    {{todo.type}} </br>
-                    {{todo.task}} </br>
-                    {{todo.notes}} </br>
+                    
+                        <ul>
+                    
+                    <li>{{todo.type}} </li></br>
+                    <li>{{todo.task}} </li></br>
+                   <li> {{todo.notes}} </li></br>
+                    </ul>
+                    
                 </span>
             </li>
         </ol>

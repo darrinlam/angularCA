@@ -17,6 +17,7 @@ function mainCtrl ($scope) {
       task: todo.task,
       notes: todo.notes,
       importance: todo.importance
+      
     }); 
     
     todo.type = ''; 

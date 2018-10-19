@@ -1,5 +1,5 @@
 
-li {
+.items {
     list-style: none;
     height: 150px;
     width: 300px;
@@ -12,8 +12,9 @@ li {
     overflow:scroll;
     transition: .3s;
     background:white;
+    
 }
-li:hover {
+.items:hover {
     transform: scale(1.25, 1.25);
 }
 .fa-close {
@@ -84,4 +85,8 @@ input:hover{
 }
 input:hover::placeholder {
     color: #F97D75;
+}
+
+li {
+    list-style:none;
 }
