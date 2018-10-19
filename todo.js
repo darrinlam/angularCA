@@ -1,6 +1,7 @@
 /*global angular*/
 /*global todoDirective*/
 
+
 angular.module('app', [])
   .controller('mainCtrl', mainCtrl)
   .directive('tododir', todoDirective);
@@ -8,6 +9,7 @@ angular.module('app', [])
 function mainCtrl ($scope) {
 
   $scope.todos = [];
+  
 
   $scope.addNew = function (todo) {
     $scope.todos.push({ 
@@ -19,6 +21,10 @@ function mainCtrl ($scope) {
     todo.type = ''; 
     todo.task = '';
     todo.notes ='';
+  };
+  
+  $scope.deleteTask = function(){
+    alert('worked');
   };
 }
 
@@ -34,7 +40,6 @@ function todoDirective () {
         '<h2>{{todo.type}}</h2>' +
         '<h5>{{todo.task}}</h5>' + 
         '<h6>{{todo.notes}}</h6>' +
-        '<button>Done</button>' +
       '</div>'
     ), 
 

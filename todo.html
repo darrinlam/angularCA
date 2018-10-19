@@ -28,10 +28,12 @@
 
             <button type='submit'>Add New</button>
         </form>
-
+        
         <ol class='todolist'>
             <li ng-repeat='todo in todos'>
-                <tododir todo='todo'/>
+                <button ng-click=deleteTask()>
+                    <tododir todo='todo'/>
+                </button>
             </li>
         </ol>
     </div>
