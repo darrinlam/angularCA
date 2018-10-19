@@ -37,13 +37,6 @@ function todoDirective () {
         '<button>Done</button>' +
       '</div>'
     ), 
-   // link: link
-  };
-  
-  //function link (scope) { /* [4] */
-  //  if (!scope.user.avatarUrl) {
-  //    scope.user.avatarUrl = 'https://www.drupal.org/files/issues/default-avatar.png';
-  //  }
- // }
 
+  };
 }
